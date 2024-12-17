@@ -14,7 +14,7 @@
 }
 
 .in {
-    width: 144px;
+    width: 120px; /* Reduced width of input field */
 }
 
 .input-containere {
@@ -39,7 +39,7 @@
 
 .input-containere input, .input-containere select {
     width: 100%; /* Input and select fields take full width */
-    max-width: 300px; /* Limit maximum width for input fields */
+    max-width: 200px; /* Further reduce the maximum width of input fields */
 }
 
 .btn-containere {
@@ -75,6 +75,7 @@
     /* Adjust the input fields in smaller screens */
     .input-containere input, .input-containere select {
         width: 100%; /* Input and select fields take full width */
+        max-width: 180px; /* Smaller max-width for very small screens */
     }
 }
 
