@@ -32,6 +32,14 @@
     width: 100%;
     gap: 10px;
     font-weight: bold;
+    white-space: nowrap; /* Prevent label text from breaking into multiple lines */
+    overflow: hidden; /* Prevent overflow of long text */
+    text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+
+.input-containere input, .input-containere select {
+    width: 100%; /* Input and select fields take full width */
+    max-width: 300px; /* Limit maximum width for input fields */
 }
 
 .btn-containere {
