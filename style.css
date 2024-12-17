@@ -1,0 +1,85 @@
+.containere {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    background-color: aquamarine;
+    width: 500px;
+    margin-top: 100px;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+}
+
+.in {
+    width: 144px;
+}
+
+.input-containere {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 58%;
+    margin-top: 35px;
+}
+
+.input-containere label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.btn-containere {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media Query for small screen sizes (Mobile) */
+@media (max-width: 768px) {
+    .containere {
+        width: 90%; /* Make container width responsive */
+        left: 0; /* Remove left offset */
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
+    }
+
+    .input-containere {
+        width: 90%; /* Increase input container width */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .in {
+        width: 100%; /* Make input fields take full width */
+    }
+
+    .btn-containere {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+}
+
+/* Media Query for extra small screens (Very small devices like phones) */
+@media (max-width: 480px) {
+    .containere {
+        width: 95%; /* Further adjust width for very small screens */
+    }
+
+    .input-containere {
+        width: 100%; /* Make input container full width */
+    }
+
+    .in {
+        width: 100%; /* Full width for input fields */
+    }
+
+    .btn-containere {
+        gap: 15px; /* Increase gap between buttons for smaller screens */
+    }
+}
