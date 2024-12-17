@@ -63,12 +63,18 @@
         flex-direction: column; /* Stack buttons vertically */
         gap: 10px;
     }
+
+    /* Adjust the input fields in smaller screens */
+    .input-containere input, .input-containere select {
+        width: 100%; /* Input and select fields take full width */
+    }
 }
 
 /* Media Query for extra small screens (Very small devices like phones) */
 @media (max-width: 480px) {
     .containere {
         width: 95%; /* Further adjust width for very small screens */
+        margin-top: 30px; /* Reduce the margin-top */
     }
 
     .input-containere {
@@ -81,5 +87,9 @@
 
     .btn-containere {
         gap: 15px; /* Increase gap between buttons for smaller screens */
+    }
+
+    .btn-containere button {
+        width: 100%; /* Make buttons full width */
     }
 }
